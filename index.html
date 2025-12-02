@@ -1,98 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahil Satale | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Satale - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
             <div class="logo">Sahil<span>Satale</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-text glass">
-            <h1>Hello, I'm <span class="name">Sahil Satale</span></h1>
-            <h2>Data Analyst • Power BI • SQL • Python</h2>
-            <p>I turn raw data into meaningful insights & dashboards.</p>
-            <a href="#projects" class="btn">View Projects</a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="Sahil Satale">Sahil Satale</h1>
+                <h2>Data Analyst & Python Developer</h2>
+                <p>Transforming data into actionable insights through advanced analytics and visualization</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/SahilSatale" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sahilsatale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="circle-bg"></div>
+                </div>
+            </div>
         </div>
-        <div class="hero-img glass">
-            <img src="yourphoto.jpg" alt="Sahil Photo" />
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about glass">
-        <h2>About Me</h2>
-        <p>
-            I am a Data Analyst skilled in SQL, Python, Power BI, Excel and Machine Learning.
-            I love building dashboards, cleaning datasets, and extracting business insights.
-            I also enjoy creating end-to-end analytics projects and automation scripts.
-        </p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Data Analyst specializing in Python-based data analysis, visualization, and insights generation. With expertise in handling complex datasets and creating meaningful narratives from data, I help organizations make data-driven decisions.</p>
+                    <p>My work spans across various domains including entertainment analytics, consumer electronics, electric vehicles, and HR analytics. I leverage powerful Python libraries and statistical methods to uncover patterns and deliver actionable recommendations.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>GitHub Commits</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Multiple</h3>
+                            <p>Domains Explored</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Game of Thrones Analysis</h3>
+                        <p>Comprehensive Python analysis of Game of Thrones dataset exploring character networks, death patterns, and storyline trends using advanced data visualization techniques.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Jupyter</span>
+                        </div>
+                        <a href="https://github.com/SahilSatale/Game-of-Thrones-Python-Project-Analysis" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
 
-        <div class="project-card glass">
-            <h3>Laptop Dataset Analysis (EDA)</h3>
-            <p>Performed feature engineering and visualized price-driving factors.</p>
-            <a href="https://github.com/SahilSatale/Data-Analysis-on-Laptop-Dataset" target="_blank" class="btn-small">GitHub</a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Laptop Dataset Analysis</h3>
+                        <p>In-depth analysis of laptop specifications and pricing trends, identifying key factors affecting laptop prices and providing market insights for consumers and manufacturers.</p>
+                        <div class="project-tags">
+                            <span>Data Analysis</span>
+                            <span>Visualization</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/SahilSatale/Data-Analysis-on-Laptop-Dataset" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Electric Vehicle Population Data</h3>
+                        <p>Analysis of electric vehicle adoption patterns, geographical distribution, and market trends to understand the EV landscape and predict future growth patterns.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Data Science</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <a href="https://github.com/SahilSatale/Electric-Vehicle-Population-Data-Analysis-" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>HR Analytics</h3>
+                        <p>Employee attrition analysis and workforce insights using statistical methods to help organizations improve retention and understand employee satisfaction factors.</p>
+                        <div class="project-tags">
+                            <span>HR Analytics</span>
+                            <span>Python</span>
+                            <span>Statistics</span>
+                        </div>
+                        <a href="https://github.com/SahilSatale/Hr-analytics" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="project-card glass">
-            <h3>HR Analytics Dashboard (Power BI)</h3>
-            <p>76K employee records analyzed to identify attrition & performance trends.</p>
-            <a href="https://github.com/SahilSatale" target="_blank" class="btn-small">GitHub</a>
-        </div>
-
-        <div class="project-card glass">
-            <h3>SQL End-to-End Projects</h3>
-            <p>Banking, Finance, IT, HR, Sales domain SQL analysis & reporting.</p>
-            <a href="https://github.com/SahilSatale" target="_blank" class="btn-small">GitHub</a>
-        </div>
-
     </section>
 
-    <!-- RESUME SECTION -->
-    <section id="resume" class="resume glass">
-        <h2>Resume</h2>
-        <p>You can download my updated resume below.</p>
-        <a href="resume.pdf" class="btn">Download Resume</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Pandas</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NumPy</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Statistical Analysis</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Matplotlib</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Seaborn</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Plotly</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Jupyter Notebook</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Excel</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact glass">
-        <h2>Contact Me</h2>
-
-        <form action="https://formspree.io/f/mrbzkrkj" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sahilsatale@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/SahilSatale" target="_blank">@SahilSatale</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/sahilsatale/" target="_blank">Sahil Satale</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Sahil Satale | All Rights Reserved</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sahil Satale. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/SahilSatale" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sahilsatale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
